@@ -46,7 +46,7 @@ export default function RSVPForm() {
             );
 
             if (!response.ok) {
-                console.error("API error:", response.status);
+                alert("API error:" + response.status);
                 alert("Có lỗi xảy ra khi gửi, vui lòng thử lại!");
                 setSubmitted(false);
                 return;
